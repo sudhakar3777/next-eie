@@ -1,0 +1,326 @@
+/* *{
+    font:Montserrat;
+} */
+.main_bg {
+    /* position: absolute; */
+    top: 0;
+    left: 1px;
+    width: 100%;
+    height: 100vh;
+    background: url('./assets/trans.png');
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.3));
+    background-size: cover;
+    z-index: -1;
+    object-fit: fill;
+    /* filter: blur(5px); */
+}
+@import url('https://fonts.googleapis.com/css2?  family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+
+.font-montserrat {
+    font-family: Montserrat, sans-serif;
+}
+
+.card_background {
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+}
+.card_background:hover {
+    background-image: linear-gradient(rgba(26, 32, 67, 0.74), rgba(34, 39, 61, 0.5));
+}
+
+.user_vehicle_details_card_background {
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+}
+
+.Busiest_Location h2 {
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+.Revenue_Card h2{
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 20px;
+}
+
+.side_Card span {
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 12px;
+}
+
+.Busiest_Location {
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    /* width:662px;
+    height:330px; */
+}
+.Busiest_Location span {
+    font-family: Montserrat,sans-serif;
+}
+
+.font {
+    font-family:Montserrat, sans-serif;
+}
+
+
+.operational_status_card {
+    width: 60%;
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+.operational_status_card h2 {
+    font-family: Montserrat ,sans-serif;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 10px;
+}
+.operational_status_card h3{
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    font-size: 0.75rem;
+    line-height: 18px;
+}
+
+.charger_occupency_card {
+    width: 40%;
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    padding: 1rem;
+    margin-left: 8px;
+    border-radius: 16px;
+}
+
+.charger_occupency_card h2 {
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 0.87rem;
+    line-height: 20px;
+}
+
+.Ev_User_Card {
+    width: 50%;
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    padding: 1rem;
+    margin-left: 15px;
+    border-radius: 16px;
+    
+}
+.Revenue_Card{
+    width: 40%;
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    padding: 1rem;
+    margin-left: 15px;
+    border-radius: 16px;
+}
+.Ev_User_Card h2{
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 0.87rem;
+    line-height: 20px;
+}
+.nav_Card h4{
+    font-family: Montserrat,sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+    color:#040000;
+    letter-spacing: 8px;
+}
+
+
+.prefered_connector_card {
+    width: 50%;
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    padding: 1rem;
+    margin-left: 8px;
+    border-radius: 16px;
+}
+
+.prefered_connector_card h3 {
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    font-size: 0.87rem;
+    line-height: 20px;
+    width: 154px;
+}
+.prefered_connector_card h1{
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.prefered_connector_card span{
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+.busines_card {
+    width: 60%;
+    height: 100%;
+}
+
+.map_card {
+    width: 40%;
+    height: 100%;
+}
+
+.circular_chart {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle_bg, .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.circle_bg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.circle {
+    background: conic-gradient(rgba(34, 211, 238, 1) calc(var(--percentage) * 1%),
+            rgba(34, 211, 238, 0.1) calc(var(--percentage) * 1%));
+}
+
+.circle_overlay {
+    width: 80px;
+    height: 80px;
+    background-color: #7f9ff8;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.circle_text {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Custome Circular Bar */
+.progress_container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.progress_circle {
+    fill: none;
+    stroke-width: 20;
+    stroke: #ddd;
+}
+
+.progress_bar {
+    fill: none;
+    stroke-width: 20;
+    stroke: #3f51b5;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    transform-origin: center;
+    transition: stroke-dashoffset 0.3s;
+}
+
+.progress_text {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-anchor: middle;
+    /* dominant-baseline: middle; */
+}
+
+.session_details_card {
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+}
+.fleet_details_card{
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    padding: 1rem 1.5rem;
+    border-radius: 16px;
+   height: 350px;
+}
+
+.graph_card {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+}
+.fleet_graph_card{
+    width: 100%;
+    height: 350px;
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+}
+
+.stats_card_text {
+    background-image: linear-gradient(rgba(6, 11, 40, 0.74), rgba(10, 14, 35, 0.71));
+}
+
+.charger_details_card{
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+   
+}
+.charger_details_card h2{
+font-family: Montserrat,sans-serif;
+font-size: 24px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+
+}
+/* .charger_details_card span{
+font-family: Montserrat,sans-serif;
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+
+} */
+.connector_details_card{
+    background-image: linear-gradient(rgba(6, 11, 38, 0.74), rgba(26, 31, 55, 0.5));
+    width:1520px;
+}
+
+.connector_details_card h1{
+font-family: Montserrat,sans-serif;
+font-size: 24px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+color:#FFFFFF;
+}
+.connector_details_card h2{
+font-family: Montserrat,sans-serif;
+font-size: 20px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+}
+
+.connector_details_card span{
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+text-align: left;
+color: #A0AEC0;
+}
+
+@media (min-width: 640px) {
+    .card_background {
+        background-image: linear-gradient(rgba(10, 15, 45, 0.74), rgba(30, 35, 65, 0.5));
+    }
+}

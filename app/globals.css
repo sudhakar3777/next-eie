@@ -1,29 +1,102 @@
+html,
+body {
+  overflow: hidden;
+}
+
+.dashboard_bg {
+  overflow: hidden;
+}
+
+.dashboard_bg > .flex-1 {
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* to hide the scrollbar */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+/* end */
+
+.dashboard_bg > .flex-1::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.Nav_Filter select {
+  background-color: transparent;
+}
+.Nav_Filter select ::after {
+  border: none;
+}
+/* .font {
+  font-family: Montserrat;
+} */
+.leaflet-marker-icon.marker-cluster.marker-cluster-small div,
+.leaflet-marker-icon.marker-cluster.marker-cluster-medium div {
+  background-color: #3b82f6 !important;
+  color: white;
+}
+
+.leaflet-marker-icon.marker-cluster.marker-cluster-small,
+.leaflet-marker-icon.marker-cluster.marker-cluster-medium {
+  background-color: #7ba9f4 !important;
+}
+
+/* glass background */
+.glass_background {
+  position: relative;
+  overflow: hidden;
+  /* border-radius: 12px; */
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(25px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.glass_background::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(255, 255, 255, 0.1)
+  );
+  z-index: 1;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+  background: url('./assets/login_back.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: fill;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    /* --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -31,3 +104,11 @@ body {
     text-wrap: balance;
   }
 }
+
+/* .dashboard-bg {
+  @apply bg-gradient-to-b from-slate-600 via-slate-900 to-slate-900
+}
+
+.card-bg {
+  @apply h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100
+} */
